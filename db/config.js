@@ -1,8 +1,8 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3307,     // Your MySQL host
+    host: 'localhost', //Your Host Name
+    port: 3307,     // Your MySQL Port Number
     user: 'root',       // Your MySQL username
     password: '',   // Your MySQL password
     database: 'test'      // Your MySQL database name
@@ -15,6 +15,5 @@ connection.connect((error) => {
         console.log('Connected to MySQL database');
     }
 });
-
 
 module.exports = connection;
